@@ -1,0 +1,35 @@
+ .logo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ .logo{
+   color: #fff;
+   font-size: 4rem;
+   font-weight: 500;
+   text-transform: uppercase;
+   position: relative;
+ }
+ .logo::before {
+     content: "VENETO.NET";
+     width: 100%;
+     color: #01fe87;
+     position: absolute;
+     top: 0;
+     left: 0;
+    border-right: 2px solid #01fe87;
+        overflow: hidden;
+        animation: animate 4s linear infinite;
+ }
+
+ @keyframes animate {
+
+     0%,
+     10%,
+     100% {
+         width: 0;
+     }
+
+     70%,
+     90% {
+         width: 90%;
+     }
+ }
